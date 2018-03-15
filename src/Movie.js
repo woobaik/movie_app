@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './Movie.css';
 
+
 class Movie extends Component {
+
+
   render() {
-    console.log(this.props)
     return (
       <div>
-      <MoviePoster poster= {this.props.poster} />
+      <MoviePoster image= {this.props.image} />
       <h2>{this.props.title}</h2>
       </div>
     );
@@ -17,7 +19,7 @@ class Movie extends Component {
 class MoviePoster extends Component {
   render() {
     return (
-      <img src={this.props.poster}/>
+      <img src={this.props.image}/>
     );
   }
 
